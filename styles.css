@@ -260,8 +260,8 @@ h3{
      }
  
 
- @media only screen and (max-width: 768px) {
-    img {
-        display: none;
+ @media only screen and (max-width: 400px) {
+    .first_container {
+        width: 400px;
     }
  }

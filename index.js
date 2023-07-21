@@ -1,6 +1,6 @@
 var emailfield = document.getElementById("email-field");
 var emailerror = document.getElementById("email-error");
-var button = document.getElementById("button");
+
 
       //// for email  ////////
 function validateEmail() {
@@ -16,6 +16,12 @@ function validateEmail() {
     emailfield.style.borderColor ="green";
     emailfield.style.backgroundColor ="";
     return true;
+  }
+}
+
+function emailbutton() {
+  if (validateEmail() === true) {
+    closepage(), openPopup();
   }
 }
    
@@ -38,8 +44,3 @@ function openpage(){
   page.classList.remove("open-page");
 }
 
-function emailbutton() {
-  if (validateEmail() === true) {
-    closepage(), openPopup();
-  }
-}
