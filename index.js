@@ -4,7 +4,7 @@ var button = document.getElementById("button");
 
       //// for email  ////////
 function validateEmail() {
-  if(!emailfield.value.match(/^[A-Za-z\._\-0-9]+[@][A-Za-z]+[+*\.][a-z]{2,4}$/)) {
+  if(!emailfield.value.match(/^[A-Za-z\._\-0-9]+[@][A-Za-z]+[+*\.][a-z]{3,4}$/)) {
     emailerror.innerHTML ="Valid email required";
     emailfield.style.borderColor ="red";
     emailfield.style.backgroundColor =" rgb(248, 200, 200)";
